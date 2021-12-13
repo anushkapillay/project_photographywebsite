@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    
+    <link href="contact.css" rel="stylesheet">
+    <link href="ca2project.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anushkapillay/contact</title>
+</head>
+<body >
+
+    <div>
+        <button onclick="darkMode()">Darkmode</button>
+        <button onclick="lightMode()">LightMode</button>
+    </div>
+
+    <a name="top" href="ca2project.html"><img src="anushka_pillay-removebg-preview.png" class="name"></a>
+    
+    <div class="container">
+        <div class="elements"><a href="work.html">Work</a></div>
+        <div class="elements"><a href="contact.html">Contact</a></div>
+       <div><a href="https://www.instagram.com/theoddnari/"><img src="icons8-instagram.svg" ></a></div>
+    </div>
+    <div class="container1">
+    <div class="head">Get in touch.<br>
+    2763pill@gmail.com<br>
+    Anushka Pillay - Mumbai<br>
+   <a href="https://www.instagram.com/theoddnari/"> <img src="icons8-instagram.svg" id="logo" ></a>
+    </div>
+        <div class="table">
+            <div class="start">GOT A PROJECT IN MIND? CONNECT WITH ME USING THE FORM BELOW.</div>
+            <table>
+                <form method="post"  action="" name="contact" id="form">
+                    <div id="message"></div>
+                    <th>Your Name*</th>
+                    
+
+                   
+                    <tr>
+                        <td><label for="fname"></label>
+                            <br>
+                            <input type="text" id="fname" placeholder="First Name" class="no-outline" autocomplete="off" >
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>error msg</small>
+                            <br>
+                        </td>
+                        <td>
+                            <label for="lname"></label>
+                            <br>
+                            <input type="text" id="lname" name="Name" placeholder="Last Name" class="no-outline" autocomplete="off">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>error msg</small>
+                             <br>
+                        </td>
+                    </tr>
+                    <th>Email*</th>
+                    <tr>
+                        <td><label for="email"></label>
+                        <br>
+                        <input type="email" id="email" name="Email"  class="no-outline" autocomplete="off">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>error msg</small>
+                        <br>
+                    </td> 
+                    <td> </td>
+                    </tr>
+                    <th>Any Website or Social media Account </th>
+                    <tr>
+                        <td><label for="smw"></label>
+                            <br>
+                            <input type="text" id="smw" name="Smw"  class="no-outline">
+                            <br>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <th>Tell me more about your Business,Brand,Product,etc.*</th>
+                    <tr>
+                        <td><label for="more"></label>
+                            <br>
+                            <input type="text" id="more" name="Smw"  class="no-outline" required>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>error msg</small>
+                            <br>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <th>Tell me More about your Photography needs*</th>
+                    <tr>
+                        <td><label for="more1"></label>
+                            <br>
+                            <input type="text" id="smw" name="more1"  class="no-outline">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>error msg</small>
+                            <br>
+                        </td>
+                        <td>
+                    </tr>   
+                    <tr>
+                       <td><input type="submit" value="Send" id="send"  ></td> 
+                    </tr>
+                </form>
+            </table>
+          
+        </div>
+    </div>
+    <div ><a href="#top" class="arrow up"></a></div>
+    <div class="footer"> © Copyright, Anushka pillay 2021</div>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+        let form = document.getElementById('form')
+        let error = []
+        let submit = ""
+
+
+form.addEventListener('submit',function(e){
+    e.preventDefault()//prevents autosubmission of the form
+    let fname = document.getElementById('fname').value;
+    let lname = document.getElementById('lname').value;
+
+    if(fname.value == "" || lname.value == ""){
+        error.push(alert("Please enter your name"))
+    }else{
+        alert("Your form is submitted successfully");
+    }
+
+    let message = document.getElementById("message")
+    message.innerText = error;
+    
+});
+
+
+
+    </script>
+    <script src="mode.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    margin-bottom:30px;
+    display: flex;
+    justify-content:flex-end;
+    flex-direction:row;   
+}
+.elements{
+    margin-top: -30px;
+   font-size: 30px;
+    height: 2.5rem;
+    width: 10rem;
+}
+#logo{
+   margin-top: -30px;
+}
+img{
+   margin-right: 40px;
+    height: 50px;
+    width: 50px;
+}
+.name{
+    position:absolute;
+    top:-55px;
+    margin-left:10px;
+    height: 15rem;
+    width:15rem;
+}
+@media only screen and (max-width:700px){
+   .name{
+      position:absolute;
+      top:-20px;
+      margin: 0;
+      height: 10rem;
+      width:10rem;
+   }
+}
+.imgcontainer,.link{
+    margin:100px 25px 25px 25px;
+   display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.picture:nth-child(1){
+   background:url("image8.jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+    height: 600px;
+    width: 400px;
+   
+ }
+ .picture:nth-child(2){
+   background:url("image2.jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+    height: 400px;
+    width:350px;
+  
+ }
+
+.picture:nth-child(5){
+   background:url("image5.jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+   height: 400px;
+   width:500px
+}
+.picture:nth-child(4){
+   background:url("image6.jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+    height: 300px;
+    width:600px;
+    
+ }
+ 
+
+ 
+ .picture:nth-child(3){
+   background:url("image4.jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+    height: 400px;
+    width:800px;
+ }
+
+
+ .footer{
+    float: right;
+    font-size:15px;
+    padding: 20px;
+    margin:0px 10px;
+    user-select: none;
+ }
+ 
+ .arrow {
+   border: solid black;
+   border-width: 0 5px 5px 0;
+   display: block;
+   position: relative;
+   bottom: -40px;
+   padding: 10px;
+   margin:0px 70px;
+   width: 5px;
+ }
+.up {
+   transform: rotate(-135deg);
+   -webkit-transform: rotate(-135deg);
+ }
+
+ .work,.contact{
+   margin-top: 40px;
+   text-align: center;
+ }
+
+ a{
+   text-decoration: none;
+   color:brown;
+  font-weight: 600;
+ }
+
+video{
+   position: relative;
+   top:30px;
+   width: 100%;
+}
+
+
+.picture{
+   margin: 15px;
+   border-radius: 10px;
+}
+
+body {
+   padding: 25px;
+   background-color: white;
+   color: black;
+   font-size: 25px;
+ }
+ .dark-mode {
+   background-color: black;
+   color: white;
+ }
+ .light-mode {
+   background-color: white;
+   color:white;
+ }
+button{
+   margin-top: 30px;
+   padding:10px;
+   border-radius:10px;
+   border:none;
+   background-color: brown;
+   position: relative;
+   left:300px;
+}

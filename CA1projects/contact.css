@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+#logo{
+    margin-right: 40px;
+     height: 50px;
+     width: 30px;
+ }
+ .container1{
+    margin-top: 120px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction:row;   
+}
+input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+   
+    outline: none;
+  }
+.head{
+    font-size: 30px;
+    color: brown;
+}
+.start{
+    font-size:20px;
+    color: brown;
+}
+table{
+height: 100vh;
+width: auto;
+color: brown;
+}
+th{
+    text-align: left;
+}
+#send{
+height: 3rem;
+width: 7rem;
+font-size: 15px;
+background-color: transparent;
+color:brown;
+border:3px solid brown;
+}
+
+#send:hover{
+    color:white;
+    background-color: rgba(165, 42, 42, 0.808);
+}

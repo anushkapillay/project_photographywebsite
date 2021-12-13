@@ -1,0 +1,56 @@
+.work1{
+    margin: 15px;
+    border-radius: 10px;
+    height: 500px;
+    width: 400px;
+    opacity: 0.6;
+    box-shadow: 5px 10px black;
+    font-size: 0px;
+ }
+ .work1:hover{
+     opacity: 1;
+     position: relative;
+     bottom: 30px;
+     transition: all 1s;
+     font-size: 40px;
+    
+ }
+ 
+ .work1:nth-child(1){
+    background:url("image2.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position:center;
+    
+  }
+  .work1:nth-child(2){
+    background:url("loc2.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position:center;
+   
+  }
+ 
+ .work1:nth-child(4){
+    background:url("foo3.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position:center;
+
+     
+  }
+  
+  .work1:nth-child(3){
+    background:url("image.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position:center;
+   
+  }
+ 
+.link{
+    height: 350px; 
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px black;
+}
